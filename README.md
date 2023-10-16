@@ -32,10 +32,6 @@ This starter creates a new Gatsby site that installs and configures the theme [`
 
 Have a look at the theme's README and files to see what options are available and how you can shadow the various components including Theme UI. Generally speaking you will want to place your files into `src/@lekoarts/gatsby-theme-jodie/` to shadow/override files. The Theme UI config can be configured by shadowing its files in `src/gatsby-plugin-theme-ui/`.
 
-### Changing the logo
-
-Edit the file at `src/@lekoarts/gatsby-theme-jodie/icons/logo.jsx`.
-
 ### Changing your fonts
 
 By default, the underlying theme and thus this starter uses "Work Sans" as its font. It's used throughout the site and set as a `font-family` on the `html` element.
