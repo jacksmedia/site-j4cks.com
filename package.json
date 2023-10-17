@@ -1,9 +1,9 @@
 {
   "private": true,
-  "name": "jodie",
-  "description": "Image-heavy photography portfolio with colorful accents & customizable pages. Includes adaptive image grids powered by CSS grid and automatic image integration into projects.",
+  "name": "Jacks.Media",
+  "description": "midjourney by xJ4cks",
   "version": "0.1.9",
-  "author": "LekoArts",
+  "author": "xJ4cks",
   "license": "0BSD",
   "starter-name": "gatsby-starter-portfolio-jodie",
   "scripts": {
