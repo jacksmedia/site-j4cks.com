@@ -12,7 +12,7 @@ const config: GatsbyConfig = {
     siteTitleAlt: `Jacks.Media`,
     siteHeadline: `Jacks.Media midjourney by xJ4cks`,
     siteUrl: `https://jacks.media`,
-    siteDescription: `midjourney by xJ4cks`,
+    siteDescription: `midjourney &c by xJ4cks`,
     siteImage: `/banner.jpg`,
     siteLanguage: `en`,
     author: `@xj4cks`,
@@ -25,7 +25,7 @@ const config: GatsbyConfig = {
       options: {
         navigation: [
           { name: `Projects`, slug: `/projects` },
-          { name: `Art`, slug: `/art` },
+          { name: `Links`, slug: `/links` },
           { name: `About`, slug: `/about` },
         ],
       },

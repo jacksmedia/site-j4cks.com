@@ -32,54 +32,6 @@ This starter creates a new Gatsby site that installs and configures the theme [`
 
 Have a look at the theme's README and files to see what options are available and how you can shadow the various components including Theme UI. Generally speaking you will want to place your files into `src/@lekoarts/gatsby-theme-jodie/` to shadow/override files. The Theme UI config can be configured by shadowing its files in `src/gatsby-plugin-theme-ui/`.
 
-### Changing your fonts
-
-By default, the underlying theme and thus this starter uses "Work Sans" as its font. It's used throughout the site and set as a `font-family` on the `html` element.
-
-If you want to change your default font or add any additional fonts, you'll need to change a couple of things:
-
-1. Font file inside `static/fonts`
-1. Preload link inside `gatsby-ssr.tsx` (the name of the font file)
-1. CSS in `global.css`
-1. The Theme UI config and its `fonts` key (see [Theme UI Typography Docs](https://theme-ui.com/theming#typography))
-
-For the sake of this explanation it's assumed that you replaced "Work Sans" with "Roboto Mono".
-
-Change the file `src/gatsby-plugin-theme-ui/index.js` with the following contents:
-
-```js
-// Inside src/gatsby-plugin-theme-ui/index.js
-import { merge } from "theme-ui";
-import originalTheme from "@lekoarts/gatsby-theme-jodie/src/gatsby-plugin-theme-ui/index";
-
-const theme = merge(originalTheme, {
-  fonts: {
-    body: `"Roboto Mono", monospace`,
-  },
-});
-
-export default theme;
-```
-
-As defined in the [Theme Specification](https://theme-ui.com/theme-spec#typography) `body` is the default body font family.
-
-**Another example:** You didn't replace "Work Sans" but added "Roboto Mono" additionally since you want to use it for your headings.
-
-Then you'd not overwrite `body` but add a `heading` key:
-
-```js
-// Inside src/gatsby-plugin-theme-ui/index.js
-import { merge } from "theme-ui";
-import originalTheme from "@lekoarts/gatsby-theme-jodie/src/gatsby-plugin-theme-ui/index";
-
-const theme = merge(originalTheme, {
-  fonts: {
-    heading: `"Roboto Mono", monospace`,
-  },
-});
-
-export default theme;
-```
 
 ### Customizing the homepage
 
@@ -153,19 +105,6 @@ The `static` folder contains the icons, social media images and `robots.txt`. Do
 
 If you have general questions or need help with Gatsby, please go to one of the [support platforms](https://www.gatsbyjs.com/contributing/community/#where-to-get-support) mentioned in Gatsby's documentation. If you have a specific question about this project, you can head to the [GitHub Discussions](https://github.com/LekoArts/gatsby-themes/discussions) of the repository.
 
-## 🎓 Learning Gatsby
-
-Looking for more guidance? Full documentation for Gatsby lives [on Gatsby's website](https://www.gatsbyjs.com/).
-
-### Themes
-
-To learn more about Gatsby themes specifically, I recommend checking out the [theme docs](https://www.gatsbyjs.com/docs/themes/).
-
-### General
-
-- **For most developers, I recommend starting with the [in-depth tutorial for creating a site with Gatsby](https://www.gatsbyjs.com/docs/tutorial/).** It starts with zero assumptions about your level of ability and walks through every step of the process.
-
-- **To dive straight into code samples, head [to Gatsby's documentation](https://www.gatsbyjs.com/docs/).** In particular, check out the _How-to Guides_ and _Reference_ items in the primary navigation.
 
 ## Attribution
 

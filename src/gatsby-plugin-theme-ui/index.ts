@@ -4,7 +4,6 @@ import originalTheme from "@lekoarts/gatsby-theme-jodie/src/gatsby-plugin-theme-
 const theme = merge(originalTheme, {
   fonts: {
     body: `"Cyberfall", monospace`,
-
   },
 })
 
