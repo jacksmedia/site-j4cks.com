@@ -8,11 +8,11 @@ const config: GatsbyConfig = {
     // You can overwrite values here that are used for the SEO component
     // You can also add new values here to query them like usual
     // See all options: https://github.com/LekoArts/gatsby-themes/blob/main/themes/gatsby-theme-jodie/gatsby-config.mjs
-    siteTitle: `Jacks.Media`,
-    siteTitleAlt: `Jacks.Media`,
-    siteHeadline: `Jacks.Media midjourney by xJ4cks`,
-    siteUrl: `https://jacks.media`,
-    siteDescription: `midjourney &c by xJ4cks`,
+    siteTitle: `J4cks.com`,
+    siteTitleAlt: `J4cks.com`,
+    siteHeadline: `xJ4cks portfolio`,
+    siteUrl: `https://j4cks.com`,
+    siteDescription: `portfolio of work by xJ4cks `,
     siteImage: `/banner.jpg`,
     siteLanguage: `en`,
     author: `@xj4cks`,
@@ -39,9 +39,9 @@ const config: GatsbyConfig = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Jacks.Media`,
-        short_name: `jacks.media`,
-        description: `Jacks.Media midjourney by xJ4cks`,
+        name: `J4cks.com`,
+        short_name: `J4cks.com`,
+        description: `J4cks.com portfolio`,
         start_url: `/`,
         background_color: `#ffffff`,
         // This will impact how browsers show your PWA/website
